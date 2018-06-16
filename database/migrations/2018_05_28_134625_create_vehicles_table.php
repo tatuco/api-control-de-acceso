@@ -32,7 +32,7 @@ class CreateVehiclesTable extends Migration
             $table->foreign('mod_id')->references('bra_id')->on('brands_vehicles')->onUpdate('cascade')->onDelete('restrict');
             $table->foreign('bra_id')->references('mod_id')->on('models_vehicles')->onUpdate('cascade')->onDelete('restrict');
             $table->foreign('owner_nic')->references('use_nic')->on('users')->onUpdate('cascade')->onDelete('restrict');
-           // $table->foreign('code_id')->references('id')->on('codes')->onUpdate('cascade')->onDelete('restrict');
+            $table->foreign('cod_id')->references('id')->on('codes')->onUpdate('cascade')->onDelete('restrict');
             $table->foreign('typ_id')->references('id')->on('types')->onUpdate('cascade')->onDelete('restrict');
             $table->foreign('acc_id')->references('acc_id')->on('accounts')->onUpdate('cascade')->onDelete('restrict');
         });
