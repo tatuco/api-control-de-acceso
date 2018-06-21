@@ -1724,8 +1724,8 @@ class PermissionSeeder extends Seeder
         ]);
 
         DB::table('permissions')->insert([
-            'name'=> 'update.param',
-            'slug'=>'update.param',
+            'name'=> 'update.params',
+            'slug'=>'update.params',
             'description' => 'ver los paramametros',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -1738,8 +1738,8 @@ class PermissionSeeder extends Seeder
         ]);
 
         DB::table('permissions')->insert([
-            'name'=> 'destroy.param',
-            'slug'=>'destroy.param',
+            'name'=> 'destroy.params',
+            'slug'=>'destroy.params',
             'description' => 'ver los paramametros',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
