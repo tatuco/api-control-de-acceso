@@ -1695,8 +1695,8 @@ class PermissionSeeder extends Seeder
         ]);
 
         DB::table('permissions')->insert([
-            'name'=> 'index.param',
-            'slug'=>'index.param',
+            'name'=> 'index.params',
+            'slug'=>'index.params',
             'description' => 'ver los paramametros',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
